@@ -14,6 +14,7 @@ from sklearn.neighbors import KNeighborsClassifier
 import sys
 sys.path.append('/images')
 sys.path.append('/data')
+sys.path.append('/documents')
 
 pages = ['Statistics on Icebreaker', 'Prediction of icebergs', 'Is Leonardo DiCaprio really dead ?']
 
@@ -114,7 +115,7 @@ if page == pages[0]:
     )
 
     #Faire une fonction avec le display
-    with open('IcebreakerChart.pdf',"rb") as f:
+    with open('../documents/IcebreakerChart.pdf',"rb") as f:
       base64_pdf = base64.b64encode(f.read()).decode('utf-8')
     
     pdf_display = F'<iframe src="data:application/pdf;base64,{base64_pdf}" width="700" height="1000" type="application/pdf"></iframe>'   
