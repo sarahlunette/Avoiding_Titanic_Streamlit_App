@@ -11,6 +11,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.neighbors import KNeighborsClassifier
+import sys
+sys.path.append('/images')
 
 pages = ['Statistics on Icebreaker', 'Prediction of icebergs', 'Is Leonardo DiCaprio really dead ?']
 
@@ -18,7 +20,7 @@ st.sidebar.title('Navigation')
 page = st.sidebar.radio("What\'s on your mind ?", pages)
 
 #Import dataset and preprocess
-df = pd.read_csv('AAD_Iceberg_database_1979-1984_version_2022-06-28.csv')
+df = pd.read_csv('../data/AAD_Iceberg_database_1979-1984_version_2022-06-28.csv')
 number_of_icebergs = df['Total'].sum()
 
 df = df[['Obs_Date_NZ', 'Obs_Lat', 'Obs_Lon', 'Total', 'size1','size2', 'size3', 'size4', 'size5']]
