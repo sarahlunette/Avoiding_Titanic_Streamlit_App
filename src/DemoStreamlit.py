@@ -13,6 +13,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.neighbors import KNeighborsClassifier
 import sys
 sys.path.append('/images')
+sys.path.append('/data')
 
 pages = ['Statistics on Icebreaker', 'Prediction of icebergs', 'Is Leonardo DiCaprio really dead ?']
 
