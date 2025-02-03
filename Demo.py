@@ -103,9 +103,9 @@ ax.plot(Totals.index, Totals.values)
 if page == pages[0]:
     st.title("Avoiding Titanic")
     st.header('First Option')
-    st.image('RescueHelicopter.jpg')
+    st.image('../images/RescueHelicopter.jpg')
     st.header('Second Option')
-    st.image('Icebreaker.jpg')
+    st.image('../images/Icebreaker.jpg')
     st.write('Link to US icebreakers')
     
     st.write(
@@ -121,7 +121,7 @@ if page == pages[0]:
     st.markdown(pdf_display, unsafe_allow_html=True)
 
     st.write('Statistics')
-    st.image('Statistics on Icebreakers.png')
+    st.image('../images/Statistics on Icebreakers.png')
 
     uploaded_files = st.file_uploader("Choose a CSV file", accept_multiple_files=True)
     for uploaded_file in uploaded_files:
@@ -154,5 +154,5 @@ if page == pages[1]:
 #Then change to size models
 
 if page == pages[2]:
-    st.image('Leonardo.jpg')
+    st.image('../images/Leonardo.jpg')
 
