@@ -11,6 +11,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.neighbors import KNeighborsClassifier
+import sys
+
+sys.path.append('/images')
 
 pages = ['Statistics on Icebreaker', 'Prediction of icebergs', 'Is Leonardo DiCaprio really dead ?']
 
